@@ -1,0 +1,8 @@
+{
+  "name": "css-var",
+  "description": "A high quality UI Toolkit, A Component Library for React 16+.",
+  "private": true,
+  "scripts": {
+    "dev": "node ./create-css.js"
+  }
+}

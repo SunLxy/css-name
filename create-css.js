@@ -1,5 +1,9 @@
+
 const fs = require("fs")
 const path = require("path")
+
+const Texts = { large: "大", middle: "中", small: "小", primary: "主", link: "连接", success: "成功", warning: "警告", error: "错误", disabled: "禁用" }
+
 // 大小功能字段
 const sizeFun = ["large", "middle", "small"]
 
@@ -22,23 +26,25 @@ const directArr = ["font-style", "border-style", , "outline-style", "text-decora
 const pre = "--w"
 
 // 生成颜色部分的
-const colorResult = []
-colorArr.forEach((color) => {
-  colorFun.forEach((fun) => {
+const colorResult = {}
+colorFun.forEach((fun) => {
+  colorResult[fun] = []
+  colorArr.forEach((color) => {
     const part = `${pre}-${color}-${fun}`
-    colorResult.push(part)
+    colorResult[fun].push(part)
     statusArr.forEach((status) => {
-      colorResult.push(`${part}-${status}`)
+      colorResult[fun].push(`${part}-${status}`)
     })
   })
 })
 
 // 生成大小部分
-const sizeResult = []
-sizeArr.forEach((size) => {
-  sizeFun.forEach((fun) => {
+const sizeResult = {}
+sizeFun.forEach((fun) => {
+  sizeResult[fun] = []
+  sizeArr.forEach((size) => {
     const part = `${pre}-${size}-${fun}`
-    sizeResult.push(part)
+    sizeResult[fun].push(part)
   })
 })
 
@@ -48,12 +54,19 @@ directArr.forEach((direct) => {
   const part = `${pre}-${direct}`
   directResult.push(part)
 })
+
+const createFile = (obj, pre, tx) => {
+  Object.entries(obj).forEach(([key, item]) => {
+    const text = Texts[key]
+    fs.writeFileSync(path.join(process.cwd(), `./cssVariable/${pre}-${key}.json5`), `//${text}-${tx}\n${JSON.stringify(item, null, 2)}`, { encoding: "utf-8", flag: "w+" })
+  })
+}
 // 颜色部分
-fs.writeFileSync(path.join(process.cwd(), "./color.json"), JSON.stringify(colorResult), { encoding: "utf-8", flag: "w+" })
+createFile(colorResult, "color", "颜色部分")
 // 大小部分
-fs.writeFileSync(path.join(process.cwd(), "./size.json"), JSON.stringify(sizeResult), { encoding: "utf-8", flag: "w+" })
+createFile(sizeResult, "size", "大小部分")
 // 直接属性部分
-fs.writeFileSync(path.join(process.cwd(), "./direct.json"), JSON.stringify(directResult), { encoding: "utf-8", flag: "w+" })
+fs.writeFileSync(path.join(process.cwd(), "./cssVariable/direct.json5"), `//直接属性部分\n${JSON.stringify(directResult, null, 2)}`, { encoding: "utf-8", flag: "w+" })
 
 
 
