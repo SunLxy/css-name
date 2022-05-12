@@ -1,0 +1,23 @@
+//主-颜色部分
+[
+  "--w-color-primary",
+  "--w-color-primary-hover",
+  "--w-color-primary-active",
+  "--w-color-primary-focus",
+  "--w-background-color-primary",
+  "--w-background-color-primary-hover",
+  "--w-background-color-primary-active",
+  "--w-background-color-primary-focus",
+  "--w-border-color-primary",
+  "--w-border-color-primary-hover",
+  "--w-border-color-primary-active",
+  "--w-border-color-primary-focus",
+  "--w-text-decoration-color-primary",
+  "--w-text-decoration-color-primary-hover",
+  "--w-text-decoration-color-primary-active",
+  "--w-text-decoration-color-primary-focus",
+  "--w-outline-color-primary",
+  "--w-outline-color-primary-hover",
+  "--w-outline-color-primary-active",
+  "--w-outline-color-primary-focus"
+]

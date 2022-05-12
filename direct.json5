@@ -1,0 +1,9 @@
+//直接属性部分
+[
+  "--w-font-style",
+  "--w-border-style",
+  "--w-outline-style",
+  "--w-text-decoration-style",
+  "--w-text-decoration-thickness",
+  "--w-text-decoration-line"
+]

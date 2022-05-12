@@ -1,0 +1,23 @@
+//连接-颜色部分
+[
+  "--w-color-link",
+  "--w-color-link-hover",
+  "--w-color-link-active",
+  "--w-color-link-focus",
+  "--w-background-color-link",
+  "--w-background-color-link-hover",
+  "--w-background-color-link-active",
+  "--w-background-color-link-focus",
+  "--w-border-color-link",
+  "--w-border-color-link-hover",
+  "--w-border-color-link-active",
+  "--w-border-color-link-focus",
+  "--w-text-decoration-color-link",
+  "--w-text-decoration-color-link-hover",
+  "--w-text-decoration-color-link-active",
+  "--w-text-decoration-color-link-focus",
+  "--w-outline-color-link",
+  "--w-outline-color-link-hover",
+  "--w-outline-color-link-active",
+  "--w-outline-color-link-focus"
+]

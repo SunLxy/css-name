@@ -1,0 +1,23 @@
+//错误-颜色部分
+[
+  "--w-color-error",
+  "--w-color-error-hover",
+  "--w-color-error-active",
+  "--w-color-error-focus",
+  "--w-background-color-error",
+  "--w-background-color-error-hover",
+  "--w-background-color-error-active",
+  "--w-background-color-error-focus",
+  "--w-border-color-error",
+  "--w-border-color-error-hover",
+  "--w-border-color-error-active",
+  "--w-border-color-error-focus",
+  "--w-text-decoration-color-error",
+  "--w-text-decoration-color-error-hover",
+  "--w-text-decoration-color-error-active",
+  "--w-text-decoration-color-error-focus",
+  "--w-outline-color-error",
+  "--w-outline-color-error-hover",
+  "--w-outline-color-error-active",
+  "--w-outline-color-error-focus"
+]

@@ -1,0 +1,11 @@
+//小-大小部分
+[
+  "--w-font-size-small",
+  "--w-line-height-small",
+  "--w-margin-small",
+  "--w-padding-small",
+  "--w-font-weight-small",
+  "--w-border-width-small",
+  "--w-border-radius-small",
+  "--w-outline-width-small"
+]

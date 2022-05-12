@@ -1,0 +1,23 @@
+//成功-颜色部分
+[
+  "--w-color-success",
+  "--w-color-success-hover",
+  "--w-color-success-active",
+  "--w-color-success-focus",
+  "--w-background-color-success",
+  "--w-background-color-success-hover",
+  "--w-background-color-success-active",
+  "--w-background-color-success-focus",
+  "--w-border-color-success",
+  "--w-border-color-success-hover",
+  "--w-border-color-success-active",
+  "--w-border-color-success-focus",
+  "--w-text-decoration-color-success",
+  "--w-text-decoration-color-success-hover",
+  "--w-text-decoration-color-success-active",
+  "--w-text-decoration-color-success-focus",
+  "--w-outline-color-success",
+  "--w-outline-color-success-hover",
+  "--w-outline-color-success-active",
+  "--w-outline-color-success-focus"
+]

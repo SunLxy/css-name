@@ -1,0 +1,23 @@
+//警告-颜色部分
+[
+  "--w-color-warning",
+  "--w-color-warning-hover",
+  "--w-color-warning-active",
+  "--w-color-warning-focus",
+  "--w-background-color-warning",
+  "--w-background-color-warning-hover",
+  "--w-background-color-warning-active",
+  "--w-background-color-warning-focus",
+  "--w-border-color-warning",
+  "--w-border-color-warning-hover",
+  "--w-border-color-warning-active",
+  "--w-border-color-warning-focus",
+  "--w-text-decoration-color-warning",
+  "--w-text-decoration-color-warning-hover",
+  "--w-text-decoration-color-warning-active",
+  "--w-text-decoration-color-warning-focus",
+  "--w-outline-color-warning",
+  "--w-outline-color-warning-hover",
+  "--w-outline-color-warning-active",
+  "--w-outline-color-warning-focus"
+]

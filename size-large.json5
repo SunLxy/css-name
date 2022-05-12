@@ -1,0 +1,11 @@
+//大-大小部分
+[
+  "--w-font-size-large",
+  "--w-line-height-large",
+  "--w-margin-large",
+  "--w-padding-large",
+  "--w-font-weight-large",
+  "--w-border-width-large",
+  "--w-border-radius-large",
+  "--w-outline-width-large"
+]

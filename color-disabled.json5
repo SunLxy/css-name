@@ -1,0 +1,23 @@
+//禁用-颜色部分
+[
+  "--w-color-disabled",
+  "--w-color-disabled-hover",
+  "--w-color-disabled-active",
+  "--w-color-disabled-focus",
+  "--w-background-color-disabled",
+  "--w-background-color-disabled-hover",
+  "--w-background-color-disabled-active",
+  "--w-background-color-disabled-focus",
+  "--w-border-color-disabled",
+  "--w-border-color-disabled-hover",
+  "--w-border-color-disabled-active",
+  "--w-border-color-disabled-focus",
+  "--w-text-decoration-color-disabled",
+  "--w-text-decoration-color-disabled-hover",
+  "--w-text-decoration-color-disabled-active",
+  "--w-text-decoration-color-disabled-focus",
+  "--w-outline-color-disabled",
+  "--w-outline-color-disabled-hover",
+  "--w-outline-color-disabled-active",
+  "--w-outline-color-disabled-focus"
+]
