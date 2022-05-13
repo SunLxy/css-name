@@ -53,7 +53,7 @@
 5. outline-color:轮廓的颜色
 6. box-shadow:盒子阴影
 
-### 只走`base`功能字段
+### 只走`base`功能字段(这个部分是可以不进行配置直接默认)
 
 1. font-style:字体样式
 2. border-style:边框样式
