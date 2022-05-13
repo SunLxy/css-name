@@ -2,7 +2,7 @@
 const fs = require("fs")
 const path = require("path")
 
-const Texts = { large: "大", default: "默认", small: "小", primary: "主", link: "链接", success: "成功", warning: "警告", error: "错误", disabled: "禁用", base: "基础" }
+const Texts = { large: "大", default: "默认", small: "小", primary: "主要", link: "链接", success: "成功", warning: "警告", error: "错误", disabled: "禁用", base: "基础" }
 
 // 大小功能字段
 const sizeFun = ["large", "default", "small"]

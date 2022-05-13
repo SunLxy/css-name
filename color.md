@@ -23,7 +23,7 @@
 19. "--w-outline-color-base-active",
 20. "--w-outline-color-base-focus"
 
-## 主-颜色部分
+## 主要-颜色部分
 
 1. "--w-color-primary",
 2. "--w-color-primary-hover",

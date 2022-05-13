@@ -14,7 +14,7 @@
 
 ### 颜色
 
-1. primary:主
+1. primary:主要
 2. link:连接
 3. success:成功
 4. warning:警告
