@@ -81,7 +81,7 @@ createFile(sizeResult, "size", "大小部分")
 // 只走`base`
 fs.writeFileSync(path.join(process.cwd(), "./cssVariable/direct.json5"), `//只走·base·\n${JSON.stringify(directResult, null, 2)}`, { encoding: "utf-8", flag: "w+" })
 if (isMd) {
-  let mdStr = '# 只走`base`\n\n'
+  let mdStr = '# 只走`base`的css属性\n\n'
   directResult.forEach((kes, index) => {
     mdStr += `${index + 1}. ${kes}\n`
   })
