@@ -109,7 +109,7 @@ if (isMd) {
   const SizeMd = fs.readFileSync(path.join(process.cwd(), "size.md"), { encoding: "utf-8" })
   const directMd = fs.readFileSync(path.join(process.cwd(), "direct.md"), { encoding: "utf-8" })
   const READMEMd = fs.readFileSync(path.join(process.cwd(), "README.md"), { encoding: "utf-8" })
-  const humpTypeStrMd = "# ts类型声明\n\n```ts\n" + `export interface ThemeProps{\n${humpTypeStr}}\n\n` + "```"
+  const humpTypeStrMd = "# 主题变量-ts类型声明\n\n```ts\n" + `export interface ThemeProps{\n${humpTypeStr}}\n\n` + "```"
   const getAsyncAllHtml = () => {
     let htmlStr = ``
     const getHtml = (value, type) => {
