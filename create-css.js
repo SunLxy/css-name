@@ -16,7 +16,7 @@ const statusArr = ["hover", "active", "focus"]
 // 大小属性字段
 const sizeArr = ["font-size", "line-height", "margin", "margin-vertical",
   "margin-horizontal", "padding", "padding-vertical", "padding-horizontal",
-  "border-width", "border-radius", "outline-width", "min-height", "min-width"]
+  "border-width", "border-radius", "outline-width"]
 // 颜色属性字段
 const colorArr = ["color", "background-color", "border-color", "text-decoration-color", "outline-color"]
 

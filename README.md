@@ -38,13 +38,11 @@
 4. margin-vertical:上下外边距
 5. margin-horizontal:左右外边距
 6. padding:内边距
-7. padding-vertical:内边距
+7. padding-vertical:上下内边距
 8. padding-horizontal:左右内边距
 9. border-width:边框大小
 10. border-radius:圆角
 11. outline-width:轮廓的宽度
-12. min-height:最小高度
-13. min-width:最小宽度
 
 ### 颜色方面
 
