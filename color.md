@@ -2,161 +2,161 @@
 
 ## base(基础)
 
-1. --w-color-base
-2. --w-color-base-hover
-3. --w-color-base-active
-4. --w-color-base-focus
-5. --w-background-color-base
-6. --w-background-color-base-hover
-7. --w-background-color-base-active
-8. --w-background-color-base-focus
-9. --w-border-color-base
-10. --w-border-color-base-hover
-11. --w-border-color-base-active
-12. --w-border-color-base-focus
-13. --w-text-decoration-color-base
-14. --w-text-decoration-color-base-hover
-15. --w-text-decoration-color-base-active
-16. --w-text-decoration-color-base-focus
-17. --w-outline-color-base
-18. --w-outline-color-base-hover
-19. --w-outline-color-base-active
-20. --w-outline-color-base-focus
+- [ ] --w-color-base
+- [ ] --w-color-base-hover
+- [ ] --w-color-base-active
+- [ ] --w-color-base-focus
+- [ ] --w-background-color-base
+- [ ] --w-background-color-base-hover
+- [ ] --w-background-color-base-active
+- [ ] --w-background-color-base-focus
+- [ ] --w-border-color-base
+- [ ] --w-border-color-base-hover
+- [ ] --w-border-color-base-active
+- [ ] --w-border-color-base-focus
+- [ ] --w-text-decoration-color-base
+- [ ] --w-text-decoration-color-base-hover
+- [ ] --w-text-decoration-color-base-active
+- [ ] --w-text-decoration-color-base-focus
+- [ ] --w-outline-color-base
+- [ ] --w-outline-color-base-hover
+- [ ] --w-outline-color-base-active
+- [ ] --w-outline-color-base-focus
 
 ## primary(主要)
 
-1. --w-color-primary
-2. --w-color-primary-hover
-3. --w-color-primary-active
-4. --w-color-primary-focus
-5. --w-background-color-primary
-6. --w-background-color-primary-hover
-7. --w-background-color-primary-active
-8. --w-background-color-primary-focus
-9. --w-border-color-primary
-10. --w-border-color-primary-hover
-11. --w-border-color-primary-active
-12. --w-border-color-primary-focus
-13. --w-text-decoration-color-primary
-14. --w-text-decoration-color-primary-hover
-15. --w-text-decoration-color-primary-active
-16. --w-text-decoration-color-primary-focus
-17. --w-outline-color-primary
-18. --w-outline-color-primary-hover
-19. --w-outline-color-primary-active
-20. --w-outline-color-primary-focus
+- [ ] --w-color-primary
+- [ ] --w-color-primary-hover
+- [ ] --w-color-primary-active
+- [ ] --w-color-primary-focus
+- [ ] --w-background-color-primary
+- [ ] --w-background-color-primary-hover
+- [ ] --w-background-color-primary-active
+- [ ] --w-background-color-primary-focus
+- [ ] --w-border-color-primary
+- [ ] --w-border-color-primary-hover
+- [ ] --w-border-color-primary-active
+- [ ] --w-border-color-primary-focus
+- [ ] --w-text-decoration-color-primary
+- [ ] --w-text-decoration-color-primary-hover
+- [ ] --w-text-decoration-color-primary-active
+- [ ] --w-text-decoration-color-primary-focus
+- [ ] --w-outline-color-primary
+- [ ] --w-outline-color-primary-hover
+- [ ] --w-outline-color-primary-active
+- [ ] --w-outline-color-primary-focus
 
 ## link(链接)
 
-1. --w-color-link
-2. --w-color-link-hover
-3. --w-color-link-active
-4. --w-color-link-focus
-5. --w-background-color-link
-6. --w-background-color-link-hover
-7. --w-background-color-link-active
-8. --w-background-color-link-focus
-9. --w-border-color-link
-10. --w-border-color-link-hover
-11. --w-border-color-link-active
-12. --w-border-color-link-focus
-13. --w-text-decoration-color-link
-14. --w-text-decoration-color-link-hover
-15. --w-text-decoration-color-link-active
-16. --w-text-decoration-color-link-focus
-17. --w-outline-color-link
-18. --w-outline-color-link-hover
-19. --w-outline-color-link-active
-20. --w-outline-color-link-focus
+- [ ] --w-color-link
+- [ ] --w-color-link-hover
+- [ ] --w-color-link-active
+- [ ] --w-color-link-focus
+- [ ] --w-background-color-link
+- [ ] --w-background-color-link-hover
+- [ ] --w-background-color-link-active
+- [ ] --w-background-color-link-focus
+- [ ] --w-border-color-link
+- [ ] --w-border-color-link-hover
+- [ ] --w-border-color-link-active
+- [ ] --w-border-color-link-focus
+- [ ] --w-text-decoration-color-link
+- [ ] --w-text-decoration-color-link-hover
+- [ ] --w-text-decoration-color-link-active
+- [ ] --w-text-decoration-color-link-focus
+- [ ] --w-outline-color-link
+- [ ] --w-outline-color-link-hover
+- [ ] --w-outline-color-link-active
+- [ ] --w-outline-color-link-focus
 
 ## success(成功)
 
-1. --w-color-success
-2. --w-color-success-hover
-3. --w-color-success-active
-4. --w-color-success-focus
-5. --w-background-color-success
-6. --w-background-color-success-hover
-7. --w-background-color-success-active
-8. --w-background-color-success-focus
-9. --w-border-color-success
-10. --w-border-color-success-hover
-11. --w-border-color-success-active
-12. --w-border-color-success-focus
-13. --w-text-decoration-color-success
-14. --w-text-decoration-color-success-hover
-15. --w-text-decoration-color-success-active
-16. --w-text-decoration-color-success-focus
-17. --w-outline-color-success
-18. --w-outline-color-success-hover
-19. --w-outline-color-success-active
-20. --w-outline-color-success-focus
+- [ ] --w-color-success
+- [ ] --w-color-success-hover
+- [ ] --w-color-success-active
+- [ ] --w-color-success-focus
+- [ ] --w-background-color-success
+- [ ] --w-background-color-success-hover
+- [ ] --w-background-color-success-active
+- [ ] --w-background-color-success-focus
+- [ ] --w-border-color-success
+- [ ] --w-border-color-success-hover
+- [ ] --w-border-color-success-active
+- [ ] --w-border-color-success-focus
+- [ ] --w-text-decoration-color-success
+- [ ] --w-text-decoration-color-success-hover
+- [ ] --w-text-decoration-color-success-active
+- [ ] --w-text-decoration-color-success-focus
+- [ ] --w-outline-color-success
+- [ ] --w-outline-color-success-hover
+- [ ] --w-outline-color-success-active
+- [ ] --w-outline-color-success-focus
 
 ## warning(警告)
 
-1. --w-color-warning
-2. --w-color-warning-hover
-3. --w-color-warning-active
-4. --w-color-warning-focus
-5. --w-background-color-warning
-6. --w-background-color-warning-hover
-7. --w-background-color-warning-active
-8. --w-background-color-warning-focus
-9. --w-border-color-warning
-10. --w-border-color-warning-hover
-11. --w-border-color-warning-active
-12. --w-border-color-warning-focus
-13. --w-text-decoration-color-warning
-14. --w-text-decoration-color-warning-hover
-15. --w-text-decoration-color-warning-active
-16. --w-text-decoration-color-warning-focus
-17. --w-outline-color-warning
-18. --w-outline-color-warning-hover
-19. --w-outline-color-warning-active
-20. --w-outline-color-warning-focus
+- [ ] --w-color-warning
+- [ ] --w-color-warning-hover
+- [ ] --w-color-warning-active
+- [ ] --w-color-warning-focus
+- [ ] --w-background-color-warning
+- [ ] --w-background-color-warning-hover
+- [ ] --w-background-color-warning-active
+- [ ] --w-background-color-warning-focus
+- [ ] --w-border-color-warning
+- [ ] --w-border-color-warning-hover
+- [ ] --w-border-color-warning-active
+- [ ] --w-border-color-warning-focus
+- [ ] --w-text-decoration-color-warning
+- [ ] --w-text-decoration-color-warning-hover
+- [ ] --w-text-decoration-color-warning-active
+- [ ] --w-text-decoration-color-warning-focus
+- [ ] --w-outline-color-warning
+- [ ] --w-outline-color-warning-hover
+- [ ] --w-outline-color-warning-active
+- [ ] --w-outline-color-warning-focus
 
 ## error(错误)
 
-1. --w-color-error
-2. --w-color-error-hover
-3. --w-color-error-active
-4. --w-color-error-focus
-5. --w-background-color-error
-6. --w-background-color-error-hover
-7. --w-background-color-error-active
-8. --w-background-color-error-focus
-9. --w-border-color-error
-10. --w-border-color-error-hover
-11. --w-border-color-error-active
-12. --w-border-color-error-focus
-13. --w-text-decoration-color-error
-14. --w-text-decoration-color-error-hover
-15. --w-text-decoration-color-error-active
-16. --w-text-decoration-color-error-focus
-17. --w-outline-color-error
-18. --w-outline-color-error-hover
-19. --w-outline-color-error-active
-20. --w-outline-color-error-focus
+- [ ] --w-color-error
+- [ ] --w-color-error-hover
+- [ ] --w-color-error-active
+- [ ] --w-color-error-focus
+- [ ] --w-background-color-error
+- [ ] --w-background-color-error-hover
+- [ ] --w-background-color-error-active
+- [ ] --w-background-color-error-focus
+- [ ] --w-border-color-error
+- [ ] --w-border-color-error-hover
+- [ ] --w-border-color-error-active
+- [ ] --w-border-color-error-focus
+- [ ] --w-text-decoration-color-error
+- [ ] --w-text-decoration-color-error-hover
+- [ ] --w-text-decoration-color-error-active
+- [ ] --w-text-decoration-color-error-focus
+- [ ] --w-outline-color-error
+- [ ] --w-outline-color-error-hover
+- [ ] --w-outline-color-error-active
+- [ ] --w-outline-color-error-focus
 
 ## disabled(禁用)
 
-1. --w-color-disabled
-2. --w-color-disabled-hover
-3. --w-color-disabled-active
-4. --w-color-disabled-focus
-5. --w-background-color-disabled
-6. --w-background-color-disabled-hover
-7. --w-background-color-disabled-active
-8. --w-background-color-disabled-focus
-9. --w-border-color-disabled
-10. --w-border-color-disabled-hover
-11. --w-border-color-disabled-active
-12. --w-border-color-disabled-focus
-13. --w-text-decoration-color-disabled
-14. --w-text-decoration-color-disabled-hover
-15. --w-text-decoration-color-disabled-active
-16. --w-text-decoration-color-disabled-focus
-17. --w-outline-color-disabled
-18. --w-outline-color-disabled-hover
-19. --w-outline-color-disabled-active
-20. --w-outline-color-disabled-focus
+- [ ] --w-color-disabled
+- [ ] --w-color-disabled-hover
+- [ ] --w-color-disabled-active
+- [ ] --w-color-disabled-focus
+- [ ] --w-background-color-disabled
+- [ ] --w-background-color-disabled-hover
+- [ ] --w-background-color-disabled-active
+- [ ] --w-background-color-disabled-focus
+- [ ] --w-border-color-disabled
+- [ ] --w-border-color-disabled-hover
+- [ ] --w-border-color-disabled-active
+- [ ] --w-border-color-disabled-focus
+- [ ] --w-text-decoration-color-disabled
+- [ ] --w-text-decoration-color-disabled-hover
+- [ ] --w-text-decoration-color-disabled-active
+- [ ] --w-text-decoration-color-disabled-focus
+- [ ] --w-outline-color-disabled
+- [ ] --w-outline-color-disabled-hover
+- [ ] --w-outline-color-disabled-active
+- [ ] --w-outline-color-disabled-focus

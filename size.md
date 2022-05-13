@@ -2,42 +2,42 @@
 
 ## large(大)
 
-1. --w-font-size-large
-2. --w-line-height-large
-3. --w-margin-large
-4. --w-margin-vertical-large
-5. --w-margin-horizontal-large
-6. --w-padding-large
-7. --w-padding-vertical-large
-8. --w-padding-horizontal-large
-9. --w-border-width-large
-10. --w-border-radius-large
-11. --w-outline-width-large
+- [ ] --w-font-size-large
+- [ ] --w-line-height-large
+- [ ] --w-margin-large
+- [ ] --w-margin-vertical-large
+- [ ] --w-margin-horizontal-large
+- [ ] --w-padding-large
+- [ ] --w-padding-vertical-large
+- [ ] --w-padding-horizontal-large
+- [ ] --w-border-width-large
+- [ ] --w-border-radius-large
+- [ ] --w-outline-width-large
 
 ## default(默认)
 
-1. --w-font-size-default
-2. --w-line-height-default
-3. --w-margin-default
-4. --w-margin-vertical-default
-5. --w-margin-horizontal-default
-6. --w-padding-default
-7. --w-padding-vertical-default
-8. --w-padding-horizontal-default
-9. --w-border-width-default
-10. --w-border-radius-default
-11. --w-outline-width-default
+- [ ] --w-font-size-default
+- [ ] --w-line-height-default
+- [ ] --w-margin-default
+- [ ] --w-margin-vertical-default
+- [ ] --w-margin-horizontal-default
+- [ ] --w-padding-default
+- [ ] --w-padding-vertical-default
+- [ ] --w-padding-horizontal-default
+- [ ] --w-border-width-default
+- [ ] --w-border-radius-default
+- [ ] --w-outline-width-default
 
 ## small(小)
 
-1. --w-font-size-small
-2. --w-line-height-small
-3. --w-margin-small
-4. --w-margin-vertical-small
-5. --w-margin-horizontal-small
-6. --w-padding-small
-7. --w-padding-vertical-small
-8. --w-padding-horizontal-small
-9. --w-border-width-small
-10. --w-border-radius-small
-11. --w-outline-width-small
+- [ ] --w-font-size-small
+- [ ] --w-line-height-small
+- [ ] --w-margin-small
+- [ ] --w-margin-vertical-small
+- [ ] --w-margin-horizontal-small
+- [ ] --w-padding-small
+- [ ] --w-padding-vertical-small
+- [ ] --w-padding-horizontal-small
+- [ ] --w-border-width-small
+- [ ] --w-border-radius-small
+- [ ] --w-outline-width-small
