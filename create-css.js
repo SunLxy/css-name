@@ -93,6 +93,7 @@ if (isMd) {
   fs.writeFileSync(path.join(process.cwd(), `./direct.md`), mdStr, { encoding: "utf-8", flag: "w+" })
 }
 
+// 生成 ts类型文件
 let humpTypeStr = ``
 humpTypeArr.forEach((item) => {
   humpTypeStr += `  /** ${item.tip} **/\n  ${item.key}?:string,\n`
