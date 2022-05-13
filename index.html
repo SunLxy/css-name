@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css name</title>
+  <style>
+    body,
+    html {
+      padding: 0;
+      margin: 0;
+    }
+
+    .warp {
+      width: 920px;
+      margin: 0 auto;
+    }
+
+    header {
+      min-height: 40px;
+      background-color: darkseagreen;
+      line-height: 40px;
+      padding-left: 5px;
+      border-radius: 3px
+    }
+
+    nav a {
+      text-decoration: none;
+      color: blueviolet;
+      background-color: gainsboro;
+      padding: 2px 10px;
+      border-radius: 3px;
+      transition: background-color 300ms;
+    }
+
+    nav a:hover {
+      background-color: rgb(202, 200, 200);
+    }
+
+    #main li,
+    #main ul {
+      list-style: none;
+    }
+
+    #main ul {
+      margin: 0;
+      padding: 0;
+      margin-left: 10px;
+    }
+
+    #main pre {
+      padding: 6px;
+      border-radius: 3px;
+      background-color: #f6f8fa
+    }
+
+    .language-ts {
+      color: #116329;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="./varJsFieid.js"></script>
+
+<body>
+  <div class="warp">
+    <header>
+      <nav>
+        <a onclick="onChange(color,'color')" href="#">颜色部分</a>
+        <a onclick="onChange(size,'size')" href="#">大小部分</a>
+        <a onclick="onChange(direct,'direct')" href="#">只走base</a>
+        <a onclick="onChange(humpType,'humpType')" href="#">主题变量类型</a>
+      </nav>
+    </header>
+    <main id="main"></main>
+  </div>
+  <script>
+    let currentType = "color"
+    const onChange = (value, type) => {
+      if (value) {
+        currentType = type
+        const htmls = marked.parse(value);
+        document.getElementById('main').innerHTML = `<div class="${type}">${htmls}</div>`
+      }
+    }
+    onChange(color, currentType)
+  </script>
+</body>
+
+</html>
