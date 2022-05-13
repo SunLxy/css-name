@@ -2,6 +2,14 @@
 const fs = require("fs")
 const path = require("path")
 
+
+const transformationHump = (value) => {
+  // eslint-disable-next-line no-useless-escape
+  return value.replace(/^--w-/, "").replace(/\-(\w)/g, function (all, letter) {
+    return letter.toUpperCase();
+  });
+}
+
 const Texts = { large: "大", default: "默认", small: "小", primary: "主要", link: "链接", success: "成功", warning: "警告", error: "错误", disabled: "禁用", base: "基础" }
 
 // 大小功能字段
@@ -26,6 +34,9 @@ const directArr = ["font-style", "border-style", , "outline-style", "text-decora
 // 标识
 const pre = "--w"
 
+const humpTypeArr = []
+
+
 // 生成颜色部分的
 const colorResult = {}
 colorFun.forEach((fun) => {
@@ -33,7 +44,9 @@ colorFun.forEach((fun) => {
   colorArr.forEach((color) => {
     const part = `${pre}-${color}-${fun}`
     colorResult[fun].push(part)
+    humpTypeArr.push(transformationHump(part))
     statusArr.forEach((status) => {
+      humpTypeArr.push(transformationHump(`${part}-${status}`))
       colorResult[fun].push(`${part}-${status}`)
     })
   })
@@ -45,6 +58,7 @@ sizeFun.forEach((fun) => {
   sizeResult[fun] = []
   sizeArr.forEach((size) => {
     const part = `${pre}-${size}-${fun}`
+    humpTypeArr.push(transformationHump(part))
     sizeResult[fun].push(part)
   })
 })
@@ -53,6 +67,7 @@ sizeFun.forEach((fun) => {
 const directResult = []
 directArr.forEach((direct) => {
   const part = `${pre}-${direct}-base`
+  humpTypeArr.push(transformationHump(part))
   directResult.push(part)
 })
 
@@ -86,6 +101,17 @@ if (isMd) {
     mdStr += `- [ ] ${kes}\n`
   })
   fs.writeFileSync(path.join(process.cwd(), `./direct.md`), mdStr, { encoding: "utf-8", flag: "w+" })
-
 }
+
+let humpTypeStr = ``
+humpTypeArr.forEach((item) => {
+  humpTypeStr += `  ${item}?:string,\n`
+})
+
+fs.writeFileSync(
+  path.join(process.cwd(), `./ThemeProps.d.ts`),
+  `interface ThemeProps{\n${humpTypeStr}}`,
+  { encoding: "utf-8", flag: "w+" }
+)
+
 
