@@ -9,7 +9,7 @@
 ## 大小
 
 1. large:大
-2. default:中
+2. default:中(默认)
 3. small:小
 
 ### 颜色
@@ -20,7 +20,7 @@
 4. warning:警告
 5. error:错误
 6. disabled:禁用
-7. base:基础
+7. base:基础(默认)
 
 ## 状态
 
