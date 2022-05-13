@@ -1,6 +1,6 @@
 # 颜色部分
 
-## base(基础)-颜色部分
+## base(基础)
 
 1. --w-color-base
 2. --w-color-base-hover
@@ -23,7 +23,7 @@
 19. --w-outline-color-base-active
 20. --w-outline-color-base-focus
 
-## primary(主要)-颜色部分
+## primary(主要)
 
 1. --w-color-primary
 2. --w-color-primary-hover
@@ -46,7 +46,7 @@
 19. --w-outline-color-primary-active
 20. --w-outline-color-primary-focus
 
-## link(链接)-颜色部分
+## link(链接)
 
 1. --w-color-link
 2. --w-color-link-hover
@@ -69,7 +69,7 @@
 19. --w-outline-color-link-active
 20. --w-outline-color-link-focus
 
-## success(成功)-颜色部分
+## success(成功)
 
 1. --w-color-success
 2. --w-color-success-hover
@@ -92,7 +92,7 @@
 19. --w-outline-color-success-active
 20. --w-outline-color-success-focus
 
-## warning(警告)-颜色部分
+## warning(警告)
 
 1. --w-color-warning
 2. --w-color-warning-hover
@@ -115,7 +115,7 @@
 19. --w-outline-color-warning-active
 20. --w-outline-color-warning-focus
 
-## error(错误)-颜色部分
+## error(错误)
 
 1. --w-color-error
 2. --w-color-error-hover
@@ -138,7 +138,7 @@
 19. --w-outline-color-error-active
 20. --w-outline-color-error-focus
 
-## disabled(禁用)-颜色部分
+## disabled(禁用)
 
 1. --w-color-disabled
 2. --w-color-disabled-hover

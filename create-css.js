@@ -64,7 +64,7 @@ const createFile = (obj, pre, tx) => {
   let mdStr = `${title}\n`
   Object.entries(obj).forEach(([key, item]) => {
     const text = Texts[key]
-    mdStr += `\n## ${key}(${text})-${tx}\n\n`
+    mdStr += `\n## ${key}(${text})\n\n`
     item.forEach((kes, index) => {
       mdStr += `${index + 1}. ${kes}\n`
     })

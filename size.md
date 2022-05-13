@@ -1,6 +1,6 @@
 # 大小部分
 
-## large(大)-大小部分
+## large(大)
 
 1. --w-font-size-large
 2. --w-line-height-large
@@ -14,7 +14,7 @@
 10. --w-border-radius-large
 11. --w-outline-width-large
 
-## default(默认)-大小部分
+## default(默认)
 
 1. --w-font-size-default
 2. --w-line-height-default
@@ -28,7 +28,7 @@
 10. --w-border-radius-default
 11. --w-outline-width-default
 
-## small(小)-大小部分
+## small(小)
 
 1. --w-font-size-small
 2. --w-line-height-small
