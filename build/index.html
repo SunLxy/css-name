@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-color-mode="light">
 
 <head>
   <meta charset="UTF-8">
@@ -25,6 +25,7 @@
       border-radius: 3px;
       width: 920px;
       position: fixed;
+      z-index: 20;
     }
 
     nav a {
@@ -44,55 +45,32 @@
       padding-top: 45px;
       padding-bottom: 50px;
     }
-
-    #main li,
-    #main ul {
-      list-style: none;
-    }
-
-    #main ul {
-      margin: 0;
-      padding: 0;
-      margin-left: 10px;
-    }
-
-    #main pre {
-      padding: 6px;
-      border-radius: 3px;
-      background-color: #f6f8fa
-    }
-
-    .language-ts {
-      color: #116329;
-      font-size: 14px;
-    }
   </style>
+  <link rel="stylesheet" type="text/css" href="./markdown.css">
 </head>
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script src="./varJsFieid.js"></script>
 
 <body>
   <div class="warp">
     <header>
       <nav>
+        <a onclick="onChange(README,'README')" href="#">README</a>
         <a onclick="onChange(color,'color')" href="#">颜色部分</a>
         <a onclick="onChange(size,'size')" href="#">大小部分</a>
         <a onclick="onChange(direct,'direct')" href="#">只走base</a>
         <a onclick="onChange(humpType,'humpType')" href="#">主题变量类型</a>
       </nav>
     </header>
-    <main id="main"></main>
+    <main id="main" class="wmde-markdown wmde-markdown-color"></main>
   </div>
   <script>
-    let currentType = "color"
+    let currentType = "README"
     const onChange = (value, type) => {
       if (value) {
-        currentType = type
-        const htmls = marked.parse(value);
-        document.getElementById('main').innerHTML = `<div class="${type}">${htmls}</div>`
+        document.getElementById('main').innerHTML = `<div class="${type}">${value}</div>`
       }
     }
-    onChange(color, currentType)
+    onChange(README, currentType)
   </script>
 </body>
 
