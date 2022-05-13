@@ -56,11 +56,23 @@ directArr.forEach((direct) => {
   directResult.push(part)
 })
 
+const isMd = process.env.MD
+
 const createFile = (obj, pre, tx) => {
+  const filename = "./" + pre + ".md"
+  const title = "# " + tx
+  let mdStr = `${title}\n`
   Object.entries(obj).forEach(([key, item]) => {
     const text = Texts[key]
+    mdStr += `\n## ${key}(${text})-${tx}\n\n`
+    item.forEach((kes, index) => {
+      mdStr += `${index + 1}. ${kes}\n`
+    })
     fs.writeFileSync(path.join(process.cwd(), `./cssVariable/${pre}-${key}.json5`), `//${text}-${tx}\n${JSON.stringify(item, null, 2)}`, { encoding: "utf-8", flag: "w+" })
   })
+  if (isMd) {
+    fs.writeFileSync(path.join(process.cwd(), filename), mdStr, { encoding: "utf-8", flag: "w+" })
+  }
 }
 // 颜色部分
 createFile(colorResult, "color", "颜色部分")
@@ -68,6 +80,12 @@ createFile(colorResult, "color", "颜色部分")
 createFile(sizeResult, "size", "大小部分")
 // 只走`base`
 fs.writeFileSync(path.join(process.cwd(), "./cssVariable/direct.json5"), `//只走·base·\n${JSON.stringify(directResult, null, 2)}`, { encoding: "utf-8", flag: "w+" })
+if (isMd) {
+  let mdStr = '# 只走`base`\n\n'
+  directResult.forEach((kes, index) => {
+    mdStr += `${index + 1}. ${kes}\n`
+  })
+  fs.writeFileSync(path.join(process.cwd(), `./direct.md`), mdStr, { encoding: "utf-8", flag: "w+" })
 
-
+}
 
