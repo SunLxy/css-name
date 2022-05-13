@@ -1,362 +1,362 @@
-interface ThemeProps {
+export interface ThemeProps{
   /** 字体颜色-基础 **/
-  colorBase?: string,
+  colorBase?:string,
   /** 字体颜色-基础-经过 **/
-  colorBaseHover?: string,
+  colorBaseHover?:string,
   /** 字体颜色-基础-激活 **/
-  colorBaseActive?: string,
+  colorBaseActive?:string,
   /** 字体颜色-基础-焦点 **/
-  colorBaseFocus?: string,
+  colorBaseFocus?:string,
   /** 背景色-基础 **/
-  backgroundColorBase?: string,
+  backgroundColorBase?:string,
   /** 背景色-基础-经过 **/
-  backgroundColorBaseHover?: string,
+  backgroundColorBaseHover?:string,
   /** 背景色-基础-激活 **/
-  backgroundColorBaseActive?: string,
+  backgroundColorBaseActive?:string,
   /** 背景色-基础-焦点 **/
-  backgroundColorBaseFocus?: string,
+  backgroundColorBaseFocus?:string,
   /** 边框颜色-基础 **/
-  borderColorBase?: string,
+  borderColorBase?:string,
   /** 边框颜色-基础-经过 **/
-  borderColorBaseHover?: string,
+  borderColorBaseHover?:string,
   /** 边框颜色-基础-激活 **/
-  borderColorBaseActive?: string,
+  borderColorBaseActive?:string,
   /** 边框颜色-基础-焦点 **/
-  borderColorBaseFocus?: string,
+  borderColorBaseFocus?:string,
   /** 下划线颜色-基础 **/
-  textDecorationColorBase?: string,
+  textDecorationColorBase?:string,
   /** 下划线颜色-基础-经过 **/
-  textDecorationColorBaseHover?: string,
+  textDecorationColorBaseHover?:string,
   /** 下划线颜色-基础-激活 **/
-  textDecorationColorBaseActive?: string,
+  textDecorationColorBaseActive?:string,
   /** 下划线颜色-基础-焦点 **/
-  textDecorationColorBaseFocus?: string,
+  textDecorationColorBaseFocus?:string,
   /** 轮廓的颜色-基础 **/
-  outlineColorBase?: string,
+  outlineColorBase?:string,
   /** 轮廓的颜色-基础-经过 **/
-  outlineColorBaseHover?: string,
+  outlineColorBaseHover?:string,
   /** 轮廓的颜色-基础-激活 **/
-  outlineColorBaseActive?: string,
+  outlineColorBaseActive?:string,
   /** 轮廓的颜色-基础-焦点 **/
-  outlineColorBaseFocus?: string,
+  outlineColorBaseFocus?:string,
   /** 字体颜色-主要 **/
-  colorPrimary?: string,
+  colorPrimary?:string,
   /** 字体颜色-主要-经过 **/
-  colorPrimaryHover?: string,
+  colorPrimaryHover?:string,
   /** 字体颜色-主要-激活 **/
-  colorPrimaryActive?: string,
+  colorPrimaryActive?:string,
   /** 字体颜色-主要-焦点 **/
-  colorPrimaryFocus?: string,
+  colorPrimaryFocus?:string,
   /** 背景色-主要 **/
-  backgroundColorPrimary?: string,
+  backgroundColorPrimary?:string,
   /** 背景色-主要-经过 **/
-  backgroundColorPrimaryHover?: string,
+  backgroundColorPrimaryHover?:string,
   /** 背景色-主要-激活 **/
-  backgroundColorPrimaryActive?: string,
+  backgroundColorPrimaryActive?:string,
   /** 背景色-主要-焦点 **/
-  backgroundColorPrimaryFocus?: string,
+  backgroundColorPrimaryFocus?:string,
   /** 边框颜色-主要 **/
-  borderColorPrimary?: string,
+  borderColorPrimary?:string,
   /** 边框颜色-主要-经过 **/
-  borderColorPrimaryHover?: string,
+  borderColorPrimaryHover?:string,
   /** 边框颜色-主要-激活 **/
-  borderColorPrimaryActive?: string,
+  borderColorPrimaryActive?:string,
   /** 边框颜色-主要-焦点 **/
-  borderColorPrimaryFocus?: string,
+  borderColorPrimaryFocus?:string,
   /** 下划线颜色-主要 **/
-  textDecorationColorPrimary?: string,
+  textDecorationColorPrimary?:string,
   /** 下划线颜色-主要-经过 **/
-  textDecorationColorPrimaryHover?: string,
+  textDecorationColorPrimaryHover?:string,
   /** 下划线颜色-主要-激活 **/
-  textDecorationColorPrimaryActive?: string,
+  textDecorationColorPrimaryActive?:string,
   /** 下划线颜色-主要-焦点 **/
-  textDecorationColorPrimaryFocus?: string,
+  textDecorationColorPrimaryFocus?:string,
   /** 轮廓的颜色-主要 **/
-  outlineColorPrimary?: string,
+  outlineColorPrimary?:string,
   /** 轮廓的颜色-主要-经过 **/
-  outlineColorPrimaryHover?: string,
+  outlineColorPrimaryHover?:string,
   /** 轮廓的颜色-主要-激活 **/
-  outlineColorPrimaryActive?: string,
+  outlineColorPrimaryActive?:string,
   /** 轮廓的颜色-主要-焦点 **/
-  outlineColorPrimaryFocus?: string,
+  outlineColorPrimaryFocus?:string,
   /** 字体颜色-链接 **/
-  colorLink?: string,
+  colorLink?:string,
   /** 字体颜色-链接-经过 **/
-  colorLinkHover?: string,
+  colorLinkHover?:string,
   /** 字体颜色-链接-激活 **/
-  colorLinkActive?: string,
+  colorLinkActive?:string,
   /** 字体颜色-链接-焦点 **/
-  colorLinkFocus?: string,
+  colorLinkFocus?:string,
   /** 背景色-链接 **/
-  backgroundColorLink?: string,
+  backgroundColorLink?:string,
   /** 背景色-链接-经过 **/
-  backgroundColorLinkHover?: string,
+  backgroundColorLinkHover?:string,
   /** 背景色-链接-激活 **/
-  backgroundColorLinkActive?: string,
+  backgroundColorLinkActive?:string,
   /** 背景色-链接-焦点 **/
-  backgroundColorLinkFocus?: string,
+  backgroundColorLinkFocus?:string,
   /** 边框颜色-链接 **/
-  borderColorLink?: string,
+  borderColorLink?:string,
   /** 边框颜色-链接-经过 **/
-  borderColorLinkHover?: string,
+  borderColorLinkHover?:string,
   /** 边框颜色-链接-激活 **/
-  borderColorLinkActive?: string,
+  borderColorLinkActive?:string,
   /** 边框颜色-链接-焦点 **/
-  borderColorLinkFocus?: string,
+  borderColorLinkFocus?:string,
   /** 下划线颜色-链接 **/
-  textDecorationColorLink?: string,
+  textDecorationColorLink?:string,
   /** 下划线颜色-链接-经过 **/
-  textDecorationColorLinkHover?: string,
+  textDecorationColorLinkHover?:string,
   /** 下划线颜色-链接-激活 **/
-  textDecorationColorLinkActive?: string,
+  textDecorationColorLinkActive?:string,
   /** 下划线颜色-链接-焦点 **/
-  textDecorationColorLinkFocus?: string,
+  textDecorationColorLinkFocus?:string,
   /** 轮廓的颜色-链接 **/
-  outlineColorLink?: string,
+  outlineColorLink?:string,
   /** 轮廓的颜色-链接-经过 **/
-  outlineColorLinkHover?: string,
+  outlineColorLinkHover?:string,
   /** 轮廓的颜色-链接-激活 **/
-  outlineColorLinkActive?: string,
+  outlineColorLinkActive?:string,
   /** 轮廓的颜色-链接-焦点 **/
-  outlineColorLinkFocus?: string,
+  outlineColorLinkFocus?:string,
   /** 字体颜色-成功 **/
-  colorSuccess?: string,
+  colorSuccess?:string,
   /** 字体颜色-成功-经过 **/
-  colorSuccessHover?: string,
+  colorSuccessHover?:string,
   /** 字体颜色-成功-激活 **/
-  colorSuccessActive?: string,
+  colorSuccessActive?:string,
   /** 字体颜色-成功-焦点 **/
-  colorSuccessFocus?: string,
+  colorSuccessFocus?:string,
   /** 背景色-成功 **/
-  backgroundColorSuccess?: string,
+  backgroundColorSuccess?:string,
   /** 背景色-成功-经过 **/
-  backgroundColorSuccessHover?: string,
+  backgroundColorSuccessHover?:string,
   /** 背景色-成功-激活 **/
-  backgroundColorSuccessActive?: string,
+  backgroundColorSuccessActive?:string,
   /** 背景色-成功-焦点 **/
-  backgroundColorSuccessFocus?: string,
+  backgroundColorSuccessFocus?:string,
   /** 边框颜色-成功 **/
-  borderColorSuccess?: string,
+  borderColorSuccess?:string,
   /** 边框颜色-成功-经过 **/
-  borderColorSuccessHover?: string,
+  borderColorSuccessHover?:string,
   /** 边框颜色-成功-激活 **/
-  borderColorSuccessActive?: string,
+  borderColorSuccessActive?:string,
   /** 边框颜色-成功-焦点 **/
-  borderColorSuccessFocus?: string,
+  borderColorSuccessFocus?:string,
   /** 下划线颜色-成功 **/
-  textDecorationColorSuccess?: string,
+  textDecorationColorSuccess?:string,
   /** 下划线颜色-成功-经过 **/
-  textDecorationColorSuccessHover?: string,
+  textDecorationColorSuccessHover?:string,
   /** 下划线颜色-成功-激活 **/
-  textDecorationColorSuccessActive?: string,
+  textDecorationColorSuccessActive?:string,
   /** 下划线颜色-成功-焦点 **/
-  textDecorationColorSuccessFocus?: string,
+  textDecorationColorSuccessFocus?:string,
   /** 轮廓的颜色-成功 **/
-  outlineColorSuccess?: string,
+  outlineColorSuccess?:string,
   /** 轮廓的颜色-成功-经过 **/
-  outlineColorSuccessHover?: string,
+  outlineColorSuccessHover?:string,
   /** 轮廓的颜色-成功-激活 **/
-  outlineColorSuccessActive?: string,
+  outlineColorSuccessActive?:string,
   /** 轮廓的颜色-成功-焦点 **/
-  outlineColorSuccessFocus?: string,
+  outlineColorSuccessFocus?:string,
   /** 字体颜色-警告 **/
-  colorWarning?: string,
+  colorWarning?:string,
   /** 字体颜色-警告-经过 **/
-  colorWarningHover?: string,
+  colorWarningHover?:string,
   /** 字体颜色-警告-激活 **/
-  colorWarningActive?: string,
+  colorWarningActive?:string,
   /** 字体颜色-警告-焦点 **/
-  colorWarningFocus?: string,
+  colorWarningFocus?:string,
   /** 背景色-警告 **/
-  backgroundColorWarning?: string,
+  backgroundColorWarning?:string,
   /** 背景色-警告-经过 **/
-  backgroundColorWarningHover?: string,
+  backgroundColorWarningHover?:string,
   /** 背景色-警告-激活 **/
-  backgroundColorWarningActive?: string,
+  backgroundColorWarningActive?:string,
   /** 背景色-警告-焦点 **/
-  backgroundColorWarningFocus?: string,
+  backgroundColorWarningFocus?:string,
   /** 边框颜色-警告 **/
-  borderColorWarning?: string,
+  borderColorWarning?:string,
   /** 边框颜色-警告-经过 **/
-  borderColorWarningHover?: string,
+  borderColorWarningHover?:string,
   /** 边框颜色-警告-激活 **/
-  borderColorWarningActive?: string,
+  borderColorWarningActive?:string,
   /** 边框颜色-警告-焦点 **/
-  borderColorWarningFocus?: string,
+  borderColorWarningFocus?:string,
   /** 下划线颜色-警告 **/
-  textDecorationColorWarning?: string,
+  textDecorationColorWarning?:string,
   /** 下划线颜色-警告-经过 **/
-  textDecorationColorWarningHover?: string,
+  textDecorationColorWarningHover?:string,
   /** 下划线颜色-警告-激活 **/
-  textDecorationColorWarningActive?: string,
+  textDecorationColorWarningActive?:string,
   /** 下划线颜色-警告-焦点 **/
-  textDecorationColorWarningFocus?: string,
+  textDecorationColorWarningFocus?:string,
   /** 轮廓的颜色-警告 **/
-  outlineColorWarning?: string,
+  outlineColorWarning?:string,
   /** 轮廓的颜色-警告-经过 **/
-  outlineColorWarningHover?: string,
+  outlineColorWarningHover?:string,
   /** 轮廓的颜色-警告-激活 **/
-  outlineColorWarningActive?: string,
+  outlineColorWarningActive?:string,
   /** 轮廓的颜色-警告-焦点 **/
-  outlineColorWarningFocus?: string,
+  outlineColorWarningFocus?:string,
   /** 字体颜色-错误 **/
-  colorError?: string,
+  colorError?:string,
   /** 字体颜色-错误-经过 **/
-  colorErrorHover?: string,
+  colorErrorHover?:string,
   /** 字体颜色-错误-激活 **/
-  colorErrorActive?: string,
+  colorErrorActive?:string,
   /** 字体颜色-错误-焦点 **/
-  colorErrorFocus?: string,
+  colorErrorFocus?:string,
   /** 背景色-错误 **/
-  backgroundColorError?: string,
+  backgroundColorError?:string,
   /** 背景色-错误-经过 **/
-  backgroundColorErrorHover?: string,
+  backgroundColorErrorHover?:string,
   /** 背景色-错误-激活 **/
-  backgroundColorErrorActive?: string,
+  backgroundColorErrorActive?:string,
   /** 背景色-错误-焦点 **/
-  backgroundColorErrorFocus?: string,
+  backgroundColorErrorFocus?:string,
   /** 边框颜色-错误 **/
-  borderColorError?: string,
+  borderColorError?:string,
   /** 边框颜色-错误-经过 **/
-  borderColorErrorHover?: string,
+  borderColorErrorHover?:string,
   /** 边框颜色-错误-激活 **/
-  borderColorErrorActive?: string,
+  borderColorErrorActive?:string,
   /** 边框颜色-错误-焦点 **/
-  borderColorErrorFocus?: string,
+  borderColorErrorFocus?:string,
   /** 下划线颜色-错误 **/
-  textDecorationColorError?: string,
+  textDecorationColorError?:string,
   /** 下划线颜色-错误-经过 **/
-  textDecorationColorErrorHover?: string,
+  textDecorationColorErrorHover?:string,
   /** 下划线颜色-错误-激活 **/
-  textDecorationColorErrorActive?: string,
+  textDecorationColorErrorActive?:string,
   /** 下划线颜色-错误-焦点 **/
-  textDecorationColorErrorFocus?: string,
+  textDecorationColorErrorFocus?:string,
   /** 轮廓的颜色-错误 **/
-  outlineColorError?: string,
+  outlineColorError?:string,
   /** 轮廓的颜色-错误-经过 **/
-  outlineColorErrorHover?: string,
+  outlineColorErrorHover?:string,
   /** 轮廓的颜色-错误-激活 **/
-  outlineColorErrorActive?: string,
+  outlineColorErrorActive?:string,
   /** 轮廓的颜色-错误-焦点 **/
-  outlineColorErrorFocus?: string,
+  outlineColorErrorFocus?:string,
   /** 字体颜色-禁用 **/
-  colorDisabled?: string,
+  colorDisabled?:string,
   /** 字体颜色-禁用-经过 **/
-  colorDisabledHover?: string,
+  colorDisabledHover?:string,
   /** 字体颜色-禁用-激活 **/
-  colorDisabledActive?: string,
+  colorDisabledActive?:string,
   /** 字体颜色-禁用-焦点 **/
-  colorDisabledFocus?: string,
+  colorDisabledFocus?:string,
   /** 背景色-禁用 **/
-  backgroundColorDisabled?: string,
+  backgroundColorDisabled?:string,
   /** 背景色-禁用-经过 **/
-  backgroundColorDisabledHover?: string,
+  backgroundColorDisabledHover?:string,
   /** 背景色-禁用-激活 **/
-  backgroundColorDisabledActive?: string,
+  backgroundColorDisabledActive?:string,
   /** 背景色-禁用-焦点 **/
-  backgroundColorDisabledFocus?: string,
+  backgroundColorDisabledFocus?:string,
   /** 边框颜色-禁用 **/
-  borderColorDisabled?: string,
+  borderColorDisabled?:string,
   /** 边框颜色-禁用-经过 **/
-  borderColorDisabledHover?: string,
+  borderColorDisabledHover?:string,
   /** 边框颜色-禁用-激活 **/
-  borderColorDisabledActive?: string,
+  borderColorDisabledActive?:string,
   /** 边框颜色-禁用-焦点 **/
-  borderColorDisabledFocus?: string,
+  borderColorDisabledFocus?:string,
   /** 下划线颜色-禁用 **/
-  textDecorationColorDisabled?: string,
+  textDecorationColorDisabled?:string,
   /** 下划线颜色-禁用-经过 **/
-  textDecorationColorDisabledHover?: string,
+  textDecorationColorDisabledHover?:string,
   /** 下划线颜色-禁用-激活 **/
-  textDecorationColorDisabledActive?: string,
+  textDecorationColorDisabledActive?:string,
   /** 下划线颜色-禁用-焦点 **/
-  textDecorationColorDisabledFocus?: string,
+  textDecorationColorDisabledFocus?:string,
   /** 轮廓的颜色-禁用 **/
-  outlineColorDisabled?: string,
+  outlineColorDisabled?:string,
   /** 轮廓的颜色-禁用-经过 **/
-  outlineColorDisabledHover?: string,
+  outlineColorDisabledHover?:string,
   /** 轮廓的颜色-禁用-激活 **/
-  outlineColorDisabledActive?: string,
+  outlineColorDisabledActive?:string,
   /** 轮廓的颜色-禁用-焦点 **/
-  outlineColorDisabledFocus?: string,
+  outlineColorDisabledFocus?:string,
   /** 字体大小-大 **/
-  fontSizeLarge?: string,
+  fontSizeLarge?:string,
   /** 行高-大 **/
-  lineHeightLarge?: string,
+  lineHeightLarge?:string,
   /** 外边距-大 **/
-  marginLarge?: string,
+  marginLarge?:string,
   /** 上下外边距-大 **/
-  marginVerticalLarge?: string,
+  marginVerticalLarge?:string,
   /** 左右外边距-大 **/
-  marginHorizontalLarge?: string,
+  marginHorizontalLarge?:string,
   /** 内边距-大 **/
-  paddingLarge?: string,
+  paddingLarge?:string,
   /** 上下内边距-大 **/
-  paddingVerticalLarge?: string,
+  paddingVerticalLarge?:string,
   /** 左右内边距-大 **/
-  paddingHorizontalLarge?: string,
+  paddingHorizontalLarge?:string,
   /** 边框大小-大 **/
-  borderWidthLarge?: string,
+  borderWidthLarge?:string,
   /** 圆角-大 **/
-  borderRadiusLarge?: string,
+  borderRadiusLarge?:string,
   /** 轮廓的宽度-大 **/
-  outlineWidthLarge?: string,
+  outlineWidthLarge?:string,
   /** 字体大小-默认 **/
-  fontSizeDefault?: string,
+  fontSizeDefault?:string,
   /** 行高-默认 **/
-  lineHeightDefault?: string,
+  lineHeightDefault?:string,
   /** 外边距-默认 **/
-  marginDefault?: string,
+  marginDefault?:string,
   /** 上下外边距-默认 **/
-  marginVerticalDefault?: string,
+  marginVerticalDefault?:string,
   /** 左右外边距-默认 **/
-  marginHorizontalDefault?: string,
+  marginHorizontalDefault?:string,
   /** 内边距-默认 **/
-  paddingDefault?: string,
+  paddingDefault?:string,
   /** 上下内边距-默认 **/
-  paddingVerticalDefault?: string,
+  paddingVerticalDefault?:string,
   /** 左右内边距-默认 **/
-  paddingHorizontalDefault?: string,
+  paddingHorizontalDefault?:string,
   /** 边框大小-默认 **/
-  borderWidthDefault?: string,
+  borderWidthDefault?:string,
   /** 圆角-默认 **/
-  borderRadiusDefault?: string,
+  borderRadiusDefault?:string,
   /** 轮廓的宽度-默认 **/
-  outlineWidthDefault?: string,
+  outlineWidthDefault?:string,
   /** 字体大小-小 **/
-  fontSizeSmall?: string,
+  fontSizeSmall?:string,
   /** 行高-小 **/
-  lineHeightSmall?: string,
+  lineHeightSmall?:string,
   /** 外边距-小 **/
-  marginSmall?: string,
+  marginSmall?:string,
   /** 上下外边距-小 **/
-  marginVerticalSmall?: string,
+  marginVerticalSmall?:string,
   /** 左右外边距-小 **/
-  marginHorizontalSmall?: string,
+  marginHorizontalSmall?:string,
   /** 内边距-小 **/
-  paddingSmall?: string,
+  paddingSmall?:string,
   /** 上下内边距-小 **/
-  paddingVerticalSmall?: string,
+  paddingVerticalSmall?:string,
   /** 左右内边距-小 **/
-  paddingHorizontalSmall?: string,
+  paddingHorizontalSmall?:string,
   /** 边框大小-小 **/
-  borderWidthSmall?: string,
+  borderWidthSmall?:string,
   /** 圆角-小 **/
-  borderRadiusSmall?: string,
+  borderRadiusSmall?:string,
   /** 轮廓的宽度-小 **/
-  outlineWidthSmall?: string,
+  outlineWidthSmall?:string,
   /** 字体样式-基础 **/
-  fontStyleBase?: string,
+  fontStyleBase?:string,
   /** 边框样式-基础 **/
-  borderStyleBase?: string,
+  borderStyleBase?:string,
   /** 轮廓的样式-基础 **/
-  outlineStyleBase?: string,
+  outlineStyleBase?:string,
   /** 下划线样式-基础 **/
-  textDecorationStyleBase?: string,
+  textDecorationStyleBase?:string,
   /** 下划线粗细-基础 **/
-  textDecorationThicknessBase?: string,
+  textDecorationThicknessBase?:string,
   /** 下划线装饰类型-基础 **/
-  textDecorationLineBase?: string,
+  textDecorationLineBase?:string,
   /** 字体粗细-基础 **/
-  fontWeightBase?: string,
+  fontWeightBase?:string,
 }
