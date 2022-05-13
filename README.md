@@ -80,3 +80,12 @@
 状态方面`hover`,`active`,`focus`的拼接,跟随颜色走
 每个功能的基础颜色不拼接状态，颜色方面默认值走`base`拼接,基础大小方面的默认值走`middle`拼接
 只走`base`功能字段的不进行其他拼接(或拼接组件名称)
+
+## 主题变量生成规则(驼峰命名)
+
+[样式]+[功能]+[状态?] 
+
+例如：
+
+1. --w-font-size-default => fontSizeDefault
+2. --w-background-color-primary-hover =>  backgroundColorPrimaryHover
