@@ -1,4 +1,4 @@
-# 只走`base`
+# 只走`base`的css属性
 
 1. --w-font-style-base
 2. --w-border-style-base

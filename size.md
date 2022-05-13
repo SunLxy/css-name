@@ -13,8 +13,6 @@
 9. --w-border-width-large
 10. --w-border-radius-large
 11. --w-outline-width-large
-12. --w-min-height-large
-13. --w-min-width-large
 
 ## default(默认)-大小部分
 
@@ -29,8 +27,6 @@
 9. --w-border-width-default
 10. --w-border-radius-default
 11. --w-outline-width-default
-12. --w-min-height-default
-13. --w-min-width-default
 
 ## small(小)-大小部分
 
@@ -45,5 +41,3 @@
 9. --w-border-width-small
 10. --w-border-radius-small
 11. --w-outline-width-small
-12. --w-min-height-small
-13. --w-min-width-small

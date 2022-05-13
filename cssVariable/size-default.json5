@@ -10,7 +10,5 @@
   "--w-padding-horizontal-default",
   "--w-border-width-default",
   "--w-border-radius-default",
-  "--w-outline-width-default",
-  "--w-min-height-default",
-  "--w-min-width-default"
+  "--w-outline-width-default"
 ]

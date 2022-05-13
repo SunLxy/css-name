@@ -10,7 +10,5 @@
   "--w-padding-horizontal-large",
   "--w-border-width-large",
   "--w-border-radius-large",
-  "--w-outline-width-large",
-  "--w-min-height-large",
-  "--w-min-width-large"
+  "--w-outline-width-large"
 ]
