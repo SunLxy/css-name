@@ -1,9 +1,10 @@
-//直接属性部分
+//只走·base·
 [
   "--w-font-style-base",
   "--w-border-style-base",
   "--w-outline-style-base",
   "--w-text-decoration-style-base",
   "--w-text-decoration-thickness-base",
-  "--w-text-decoration-line-base"
+  "--w-text-decoration-line-base",
+  "--w-font-weight-base"
 ]

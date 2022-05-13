@@ -6,16 +6,21 @@
 
 ## 功能字段
 
+## 大小
+
 1. large:大
-2. middle:中
+2. default:中
 3. small:小
-4. primary:主
-5. link:连接
-6. success:成功
-7. warning:警告
-8. error:错误
-9. disabled:禁用
-10. base:基础
+
+### 颜色
+
+1. primary:主
+2. link:连接
+3. success:成功
+4. warning:警告
+5. error:错误
+6. disabled:禁用
+7. base:基础
 
 ## 状态
 
@@ -30,13 +35,16 @@
 1. font-size:字体大小
 2. line-height:行高
 3. margin:外边距
-4. padding:内边距
-5. font-weight:字体粗细
-6. border-width:边框大小
-7. border-radius:圆角
-8. outline-width:轮廓的宽度
-9. min-height:最小高度
-10. min-width:最小宽度
+4. margin-vertical:上下外边距
+5. margin-horizontal:左右外边距
+6. padding:内边距
+7. padding-vertical:内边距
+8. padding-horizontal:左右内边距
+9. border-width:边框大小
+10. border-radius:圆角
+11. outline-width:轮廓的宽度
+12. min-height:最小高度
+13. min-width:最小宽度
 
 ### 颜色方面
 
@@ -55,6 +63,7 @@
 4. text-decoration-style:下划线样式
 5. text-decoration-thickness:下划线粗细
 6. text-decoration-line:下划线装饰类型
+7. font-weight:字体粗细
 
 ## 组合示例
 
@@ -64,7 +73,7 @@
 4. --w-font-size-large
 5. --w-font-size-middle
 6. --w-font-size-small
-7. --w-font-style
+7. --w-font-style-base
 
 ## 说明
 

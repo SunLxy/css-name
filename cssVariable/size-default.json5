@@ -1,0 +1,16 @@
+//默认-大小部分
+[
+  "--w-font-size-default",
+  "--w-line-height-default",
+  "--w-margin-default",
+  "--w-margin-vertical-default",
+  "--w-margin-horizontal-default",
+  "--w-padding-default",
+  "--w-padding-vertical-default",
+  "--w-padding-horizontal-default",
+  "--w-border-width-default",
+  "--w-border-radius-default",
+  "--w-outline-width-default",
+  "--w-min-height-default",
+  "--w-min-width-default"
+]

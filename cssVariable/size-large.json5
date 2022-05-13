@@ -3,9 +3,14 @@
   "--w-font-size-large",
   "--w-line-height-large",
   "--w-margin-large",
+  "--w-margin-vertical-large",
+  "--w-margin-horizontal-large",
   "--w-padding-large",
-  "--w-font-weight-large",
+  "--w-padding-vertical-large",
+  "--w-padding-horizontal-large",
   "--w-border-width-large",
   "--w-border-radius-large",
-  "--w-outline-width-large"
+  "--w-outline-width-large",
+  "--w-min-height-large",
+  "--w-min-width-large"
 ]
