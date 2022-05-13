@@ -1,7 +1,8 @@
 
-const fs = require("fs")
-const path = require("path")
-
+import fs from "fs"
+import path from "path"
+import { sizeFun, colorFun, statusArr, sizeArr, colorArr, directArr } from "./field/index.js"
+import Texts from "./field/text.js"
 
 const transformationHump = (value) => {
   // eslint-disable-next-line no-useless-escape
@@ -10,44 +11,27 @@ const transformationHump = (value) => {
   });
 }
 
-const Texts = { large: "大", default: "默认", small: "小", primary: "主要", link: "链接", success: "成功", warning: "警告", error: "错误", disabled: "禁用", base: "基础" }
-
-// 大小功能字段
-const sizeFun = ["large", "default", "small"]
-
-// 颜色功能字段
-const colorFun = ["base", "primary", "link", "success", "warning", "error", "disabled"]
-
-// 状态部分
-const statusArr = ["hover", "active", "focus"]
-
-// 大小属性字段
-const sizeArr = ["font-size", "line-height", "margin", "margin-vertical",
-  "margin-horizontal", "padding", "padding-vertical", "padding-horizontal",
-  "border-width", "border-radius", "outline-width"]
-// 颜色属性字段
-const colorArr = ["color", "background-color", "border-color", "text-decoration-color", "outline-color"]
-
-// 直接样式部分
-const directArr = ["font-style", "border-style", , "outline-style", "text-decoration-style", "text-decoration-thickness", "text-decoration-line", "font-weight",]
-
 // 标识
 const pre = "--w"
 
 const humpTypeArr = []
 
-
 // 生成颜色部分的
 const colorResult = {}
 colorFun.forEach((fun) => {
   colorResult[fun] = []
+  const funText = Texts[fun]
   colorArr.forEach((color) => {
+    const colorText = Texts[color]
+    const tip = `${colorText}-${funText}`
     const part = `${pre}-${color}-${fun}`
     colorResult[fun].push(part)
-    humpTypeArr.push(transformationHump(part))
+    humpTypeArr.push({ key: transformationHump(part), tip })
+
     statusArr.forEach((status) => {
-      humpTypeArr.push(transformationHump(`${part}-${status}`))
       colorResult[fun].push(`${part}-${status}`)
+      const statusText = Texts[status]
+      humpTypeArr.push({ key: transformationHump(`${part}-${status}`), tip: `${tip}-${statusText}` })
     })
   })
 })
@@ -56,19 +40,25 @@ colorFun.forEach((fun) => {
 const sizeResult = {}
 sizeFun.forEach((fun) => {
   sizeResult[fun] = []
+  const funText = Texts[fun]
   sizeArr.forEach((size) => {
+    const sizeText = Texts[size]
+    const tip = `${sizeText}-${funText}`
     const part = `${pre}-${size}-${fun}`
-    humpTypeArr.push(transformationHump(part))
     sizeResult[fun].push(part)
+    humpTypeArr.push({ key: transformationHump(part), tip })
+
   })
 })
 
 // 只走`base`
 const directResult = []
 directArr.forEach((direct) => {
+  const directText = Texts[direct]
+  const tip = `${directText}-基础`
   const part = `${pre}-${direct}-base`
-  humpTypeArr.push(transformationHump(part))
   directResult.push(part)
+  humpTypeArr.push({ key: transformationHump(part), tip })
 })
 
 const isMd = process.env.MD
@@ -105,12 +95,12 @@ if (isMd) {
 
 let humpTypeStr = ``
 humpTypeArr.forEach((item) => {
-  humpTypeStr += `  ${item}?:string,\n`
+  humpTypeStr += `  /** ${item.tip} **/\n  ${item.key}?:string,\n`
 })
 
 fs.writeFileSync(
   path.join(process.cwd(), `./ThemeProps.d.ts`),
-  `interface ThemeProps{\n${humpTypeStr}}`,
+  `export interface ThemeProps{\n${humpTypeStr}}`,
   { encoding: "utf-8", flag: "w+" }
 )
 

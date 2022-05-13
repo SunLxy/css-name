@@ -1,5 +1,6 @@
 {
   "name": "css-var",
+  "type": "module",
   "description": "A high quality UI Toolkit, A Component Library for React 16+.",
   "private": true,
   "scripts": {
