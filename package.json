@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "node ./create-css.js",
-    "md": "MD=true node ./create-css.js"
+    "md": "MD=true node ./create-css.js",
+    "build": "build=true node ./create-css.js"
   }
 }

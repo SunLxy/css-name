@@ -62,6 +62,10 @@ directArr.forEach((direct) => {
 })
 
 const isMd = process.env.MD
+const isBuild = process.env.build
+
+let MDALLStr = ``
+
 
 const createFile = (obj, pre, tx) => {
   const filename = "./" + pre + ".md"
@@ -73,10 +77,15 @@ const createFile = (obj, pre, tx) => {
     item.forEach((kes,) => {
       mdStr += `- [ ] ${kes}\n`
     })
-    fs.writeFileSync(path.join(process.cwd(), `./cssVariable/${pre}-${key}.json5`), `//${text}-${tx}\n${JSON.stringify(item, null, 2)}`, { encoding: "utf-8", flag: "w+" })
+    if (!isBuild) {
+      fs.writeFileSync(path.join(process.cwd(), `./cssVariable/${pre}-${key}.json5`), `//${text}-${tx}\n${JSON.stringify(item, null, 2)}`, { encoding: "utf-8", flag: "w+" })
+    }
   })
-  if (isMd) {
-    fs.writeFileSync(path.join(process.cwd(), filename), mdStr, { encoding: "utf-8", flag: "w+" })
+  if (isMd || isBuild) {
+    MDALLStr += `const ${pre}=${JSON.stringify(mdStr)};\n`
+    if (isBuild) {
+      fs.writeFileSync(path.join(process.cwd(), filename), mdStr, { encoding: "utf-8", flag: "w+" })
+    }
   }
 }
 // 颜色部分
@@ -85,24 +94,35 @@ createFile(colorResult, "color", "颜色部分")
 createFile(sizeResult, "size", "大小部分")
 // 只走`base`
 fs.writeFileSync(path.join(process.cwd(), "./cssVariable/direct.json5"), `//只走·base·\n${JSON.stringify(directResult, null, 2)}`, { encoding: "utf-8", flag: "w+" })
-if (isMd) {
+if (isMd || isBuild) {
   let mdStr = '# 只走`base`的css属性\n\n'
   directResult.forEach((kes,) => {
     mdStr += `- [ ] ${kes}\n`
   })
-  fs.writeFileSync(path.join(process.cwd(), `./direct.md`), mdStr, { encoding: "utf-8", flag: "w+" })
+  MDALLStr += `const direct=${JSON.stringify(mdStr)};\n`
+  if (!isBuild) {
+    fs.writeFileSync(path.join(process.cwd(), `./direct.md`), mdStr, { encoding: "utf-8", flag: "w+" })
+  }
 }
-
 // 生成 ts类型文件
 let humpTypeStr = ``
 humpTypeArr.forEach((item) => {
   humpTypeStr += `  /** ${item.tip} **/\n  ${item.key}?:string,\n`
 })
+if (!isBuild) {
+  fs.writeFileSync(
+    path.join(process.cwd(), `./ThemeProps.d.ts`),
+    `export interface ThemeProps{\n${humpTypeStr}}`,
+    { encoding: "utf-8", flag: "w+" }
+  )
+}
 
-fs.writeFileSync(
-  path.join(process.cwd(), `./ThemeProps.d.ts`),
-  `export interface ThemeProps{\n${humpTypeStr}}`,
-  { encoding: "utf-8", flag: "w+" }
-)
-
+if (isBuild) {
+  const humpTypeFieId = '# ts类型\n\n```ts\nexport interface ThemeProps{\n' + humpTypeStr + "}\n```"
+  fs.writeFileSync(
+    path.join(process.cwd(), `./build/varJsFieid.js`),
+    `${MDALLStr}\nconst humpType=${JSON.stringify(humpTypeFieId)}`,
+    { encoding: "utf-8", flag: "w+" }
+  )
+}
 
