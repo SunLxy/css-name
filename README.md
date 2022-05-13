@@ -15,6 +15,7 @@
 7. warning:警告
 8. error:错误
 9. disabled:禁用
+10. base:基础
 
 ## 状态
 
@@ -67,5 +68,5 @@
 大小方面的拼接`large`,`middle`,`small`三个
 颜色方面走`primary`,`link`,`success`,`warning`,`error`,`disabled`拼接
 状态方面`hover`,`active`,`focus`的拼接,跟随颜色走
-基础颜色不拼接状态，基础大小方面的默认值走`middle`拼接
+每个功能的基础颜色不拼接状态，基础大小方面的默认值走`middle`拼接
 直接样式方面不进行其他拼接(或拼接组件名称)

@@ -2,13 +2,13 @@
 const fs = require("fs")
 const path = require("path")
 
-const Texts = { large: "大", middle: "中", small: "小", primary: "主", link: "连接", success: "成功", warning: "警告", error: "错误", disabled: "禁用" }
+const Texts = { large: "大", middle: "中", small: "小", primary: "主", link: "连接", success: "成功", warning: "警告", error: "错误", disabled: "禁用", base: "基础" }
 
 // 大小功能字段
 const sizeFun = ["large", "middle", "small"]
 
 // 颜色功能字段
-const colorFun = ["primary", "link", "success", "warning", "error", "disabled"]
+const colorFun = ["base", "primary", "link", "success", "warning", "error", "disabled"]
 
 // 状态部分
 const statusArr = ["hover", "active", "focus"]

@@ -1,0 +1,23 @@
+//基础-颜色部分
+[
+  "--w-color-base",
+  "--w-color-base-hover",
+  "--w-color-base-active",
+  "--w-color-base-focus",
+  "--w-background-color-base",
+  "--w-background-color-base-hover",
+  "--w-background-color-base-active",
+  "--w-background-color-base-focus",
+  "--w-border-color-base",
+  "--w-border-color-base-hover",
+  "--w-border-color-base-active",
+  "--w-border-color-base-focus",
+  "--w-text-decoration-color-base",
+  "--w-text-decoration-color-base-hover",
+  "--w-text-decoration-color-base-active",
+  "--w-text-decoration-color-base-focus",
+  "--w-outline-color-base",
+  "--w-outline-color-base-hover",
+  "--w-outline-color-base-active",
+  "--w-outline-color-base-focus"
+]
