@@ -48,10 +48,10 @@ sizeFun.forEach((fun) => {
   })
 })
 
-// 生成直接样式方面的
+// 只走`base`
 const directResult = []
 directArr.forEach((direct) => {
-  const part = `${pre}-${direct}`
+  const part = `${pre}-${direct}-base`
   directResult.push(part)
 })
 

@@ -35,6 +35,8 @@
 6. border-width:边框大小
 7. border-radius:圆角
 8. outline-width:轮廓的宽度
+9. min-height:最小高度
+10. min-width:最小宽度
 
 ### 颜色方面
 
@@ -43,8 +45,9 @@
 3. border-color:边框颜色
 4. text-decoration-color:下划线颜色
 5. outline-color:轮廓的颜色
+6. box-shadow:盒子阴影
 
-### 直接样式方面
+### 只走`base`功能字段
 
 1. font-style:字体样式
 2. border-style:边框样式
@@ -68,5 +71,5 @@
 大小方面的拼接`large`,`middle`,`small`三个
 颜色方面走`primary`,`link`,`success`,`warning`,`error`,`disabled`拼接
 状态方面`hover`,`active`,`focus`的拼接,跟随颜色走
-每个功能的基础颜色不拼接状态，基础大小方面的默认值走`middle`拼接
-直接样式方面不进行其他拼接(或拼接组件名称)
+每个功能的基础颜色不拼接状态，颜色方面默认值走`base`拼接,基础大小方面的默认值走`middle`拼接
+只走`base`功能字段的不进行其他拼接(或拼接组件名称)
