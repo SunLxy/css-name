@@ -75,6 +75,8 @@
 
 ## 说明
 
+css变量拼接规则: 标识 + [样式]+[功能(组件名称/组件名称+位置)]+[状态?] 
+
 大小方面的拼接`large`,`middle`,`small`三个
 颜色方面走`primary`,`link`,`success`,`warning`,`error`,`disabled`拼接
 状态方面`hover`,`active`,`focus`的拼接,跟随颜色走
@@ -83,9 +85,35 @@
 
 ## 主题变量生成规则(驼峰命名)
 
-[样式]+[功能]+[状态?] 
+[样式]+[功能(组件名称/组件名称+位置)]+[状态?] 
 
 例如：
 
 1. --w-font-size-default => fontSizeDefault
 2. --w-background-color-primary-hover =>  backgroundColorPrimaryHover
+
+## 大小划分
+
+### 字体大小
+
+1. --w-font-size-small:12px
+2. --w-font-size-default:14px
+3. --w-font-size-large:16px
+
+### 行高
+
+1. --w-line-height-default:1.5
+
+### 圆角
+
+1. --w-border-radius-default:5px
+
+## 色彩设计
+
+### 主题色
+
+### 功能色
+
+### 极简中性色
+
+### 背景色
