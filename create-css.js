@@ -4,6 +4,7 @@ import path from "path"
 import { sizeFun, colorFun, statusArr, sizeArr, colorArr, directArr } from "./field/index.js"
 import Texts from "./field/text.js"
 import { createRemark } from "./remark.js"
+import { createColorHex } from "./utils.js"
 
 const transformationHump = (value) => {
   // eslint-disable-next-line no-useless-escape
@@ -129,6 +130,7 @@ if (isMd) {
   }
   getAsyncAllHtml()
 }
-
+const colorSum = createColorHex()
+fs.writeFileSync(path.join(process.cwd(), "./cssVariable/buttonColor.json5"), JSON.stringify(colorSum, null, 2), { encoding: "utf-8", flag: "w+" })
 
 
