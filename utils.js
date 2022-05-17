@@ -3,6 +3,7 @@ import Color from "color"
 const transformColor = (value) => {
   const colors = {}
 
+  colors.default = value
   colors.fade74 = Color(value).fade(0.74).hex()
 
   colors.darken10 = Color(value).darken(0.1).hex()
@@ -33,4 +34,32 @@ export const createColorHex = () => {
   sum.link = transformColor("#008ef0")
   sum.primary = transformColor("#008ef0")
   return sum
+}
+
+
+
+const createS = (type) => {
+  const jsons = {}
+  jsons[`backgroundColor${type}`] = ""
+  jsons[`backgroundColor${type}Hover`] = ""
+  jsons[`boxShadowColor${type}Focus`] = ""
+  jsons[`backgroundColor${type}Active`] = ""
+  jsons[`backgroundColor${type}Disabled`] = ""
+  jsons[`boxShadowColor${type}Basic`] = ""
+  jsons[`backgroundColor${type}BasicHover`] = ""
+  jsons[`color${type}BasicDisabled`] = ""
+  jsons[`backgroundColor${type}BasicActive`] = ""
+  return jsons
+}
+
+export const getTypes = () => {
+  const type = ["Primary", "Success", 'Warning', 'Danger', 'Light', 'Dark', 'Link']
+  let result = {}
+  type.forEach((key) => {
+    result = {
+      ...result,
+      ...createS(key)
+    }
+  })
+  return result
 }

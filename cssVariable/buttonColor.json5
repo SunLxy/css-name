@@ -1,5 +1,6 @@
 {
   primary: {
+    default: "#008ef0",
     fade74: "#008EF0",
     darken10: "#0080D8",
     darken12: "#007DD3",
@@ -12,6 +13,7 @@
     lighten42: "#56BAFF",
   },
   success: {
+    default: "#28a745",
     fade74: "#28A745",
     darken10: "#24963E",
     darken12: "#23933D",
@@ -24,6 +26,7 @@
     lighten42: "#51D56F",
   },
   warning: {
+    default: "#ffc107",
     fade74: "#FFC107",
     darken10: "#ECB100",
     darken12: "#E7AD00",
@@ -36,6 +39,7 @@
     lighten42: "#FFDD75",
   },
   danger: {
+    default: "#dc3545",
     fade74: "#DC3545",
     darken10: "#D12435",
     darken12: "#CD2334",
@@ -48,6 +52,7 @@
     lighten42: "#ED979F",
   },
   light: {
+    default: "#f8f9fa",
     fade74: "#F8F9FA",
     darken10: "#DBE0E5",
     darken12: "#D5DBE1",
@@ -60,6 +65,7 @@
     lighten42: "#FFFFFF",
   },
   lightBasic: {
+    default: "#9199a7",
     fade74: "#9199A7",
     darken10: "#808999",
     darken12: "#7C8696",
@@ -72,6 +78,7 @@
     lighten42: "#DADDE1",
   },
   lightDisabled: {
+    default: "#393e48",
     fade74: "#393E48",
     darken10: "#333841",
     darken12: "#32373F",
@@ -84,6 +91,7 @@
     lighten42: "#515866",
   },
   dark: {
+    default: "#393e48",
     fade74: "#393E48",
     darken10: "#333841",
     darken12: "#32373F",
@@ -96,6 +104,7 @@
     lighten42: "#515866",
   },
   link: {
+    default: "#008ef0",
     fade74: "#008EF0",
     darken10: "#0080D8",
     darken12: "#007DD3",
